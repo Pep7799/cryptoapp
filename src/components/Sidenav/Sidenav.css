@@ -1,0 +1,50 @@
+.sidenav{
+    width: 15vw;
+    height: 100vh;
+    background: #2F4858;
+    color: #FFFFFF;
+    padding: 10px 30px;
+        
+}
+
+h2 {
+   
+    font-size: 24px;
+    font-family: 'Poppins', sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+}
+
+span {
+    font-weight: 700;
+}
+
+.lists {
+    padding: 0px;
+}
+
+.each-list {
+    padding-bottom: 30px;
+    font-size: 16px;
+    font-weight: 400px;
+    line-height: 24px;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+}
+
+.dashboard {
+    display: flex;
+    gap: 2px;
+
+}
+
+.dashboard-background {
+    background-color: #00C6AF;
+    border-radius: 16px;
+    padding: 10px 5px 0px 10px;
+    height: 40px;
+    width: 100px;
+    margin-bottom: 25px;
+}

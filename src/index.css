@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,400;0,600;0,700;0,900;1,400&display=swap');
+
+body {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  
+}
+
+html {
+  margin: 0px;
+  padding: 0px;
+}
+
+
+:root{
+  --textColor: rgb(230, 233, 237);
+  --backgroundColor: rgb(56, 33, 33);
+} 
+
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(36, 36, 42);
+}
+
+.container {
+  max-width: 1240px;
+  margin: auto;
+}
+
+.btn {
+  padding: 12px 30px;
+  border: 1px solid var(--textColor);
+  background-color: var(--backgroundColor);
+  color: azure;
+  border-radius: 24px 4px;
+  font-weight: 400px;
+  cursor: pointer;
+  font-size: 13px;
+  transition-property: opacity transform;
+  transition-duration: 0.3s;
+}
+
+.btn:hover {
+  opacity: 0.7s;    
+}
+
+.btn:active {
+  transform: translateY(10%);
+  
+}
+
+input {
+  padding:12px 32px;
+  background: transparent;
+  border: 2px solid var(--color);
+  border-radius: 24px 4px;
+  outline: none;
+  transition: inherit;
+  margin-right: 16px;
+}
+
+input:invalid:not(:focus){
+    
+    animation: shake 0.3s;
+}
