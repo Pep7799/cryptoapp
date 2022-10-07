@@ -6,6 +6,7 @@ import Vector from '../../Images/Vector.png'
 
 const Sidenav = () => {
   return (
+    <section className='main-board'>
     <div className='sidenav'>
       <h2>Crypto<span>Update</span></h2>
       <ul className='lists'>
@@ -16,6 +17,11 @@ const Sidenav = () => {
         <li className='each-list'> <img src={Vector} alt="news" className='icon'/> News</li>
       </ul>       
     </div>
+
+    <div className='main-area'>
+      main
+    </div>
+    </section>
   )
 }
 

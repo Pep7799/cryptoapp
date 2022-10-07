@@ -1,9 +1,15 @@
+.main-board{
+    display: flex;
+    justify-content: flex-start;
+}
+
 .sidenav{
     width: 15vw;
     height: 100vh;
     background: #2F4858;
     color: #FFFFFF;
     padding: 10px 30px;
+    
         
 }
 

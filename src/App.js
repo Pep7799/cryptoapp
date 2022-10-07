@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 import Sidenav from './components/Sidenav/Sidenav'
-import Main from './components/Main/Main'
 
 function App() {
    {/*
@@ -25,7 +24,7 @@ function App() {
   return (
     <div className="App">
       <Sidenav/>
-      <Main/>
+    
       
       {/*  <div>
            <img src = {data[0].image} alt = 'coin'/>
