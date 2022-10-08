@@ -1,10 +1,27 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+import axios from 'axios'
 import './Sidenav.css'
 import Home from '../../Images/Home.png'
 import Swap from '../../Images/Swap.png'
 import Vector from '../../Images/Vector.png'
 
+
+
+
+
 const Sidenav = () => {
+
+  const [data, setData] = useState(null)
+
+  useEffect (() => {
+    axios.get("https://api.coingecko.com/api/v3/exchange_rates")
+    .then ((response) => {
+        setData(response.data)
+        console.log(response.data)
+
+    })
+  })
+ 
   return (
     <section className='main-board'>
     <div className='sidenav'>
@@ -19,7 +36,17 @@ const Sidenav = () => {
     </div>
 
     <div className='main-area'>
-      main
+      <input type="text" placeholder = "Search anything" />
+      <p>Market trends</p>
+
+      <div>
+
+      </div>
+
+      <div>
+        <h4>Market updates</h4>
+
+      </div>
     </div>
     </section>
   )

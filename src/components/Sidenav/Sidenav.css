@@ -1,6 +1,7 @@
 .main-board{
     display: flex;
     justify-content: flex-start;
+    
 }
 
 .sidenav{
@@ -18,6 +19,7 @@ h2 {
     font-size: 24px;
     font-family: 'Poppins', sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 400;
+    margin-bottom: 50px;
 }
 
 span {
@@ -54,3 +56,9 @@ span {
     width: 100px;
     margin-bottom: 25px;
 }
+
+.main-area {
+    background-color: #FBFDFF;
+    width: 80vh;
+    padding: 30px;
+} 
