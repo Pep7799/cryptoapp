@@ -4,24 +4,14 @@ import './Sidenav.css'
 import Home from '../../Images/Home.png'
 import Swap from '../../Images/Swap.png'
 import Vector from '../../Images/Vector.png'
+import Coinslist from '../CoinsList/Coinslist'
 
 
 
 
 
-const Sidenav = () => {
+const Sidenav = (props) => {
 
-  const [data, setData] = useState(null)
-
-  useEffect (() => {
-    axios.get("https://api.coingecko.com/api/v3/exchange_rates")
-    .then ((response) => {
-        setData(response.data)
-        console.log(response.data)
-
-    })
-  })
- 
   return (
     <section className='main-board'>
     <div className='sidenav'>
@@ -43,10 +33,28 @@ const Sidenav = () => {
 
       </div>
 
-      <div>
+      <div className='market-updates'>
         <h4>Market updates</h4>
-
       </div>
+
+        <div className='cointainer'>
+          <div>
+            <div className='heading-row'>
+              <h2>No</h2>
+              <h2>Coin</h2>
+              <h2>Last price</h2>
+              <h2 className='mobile-version'>Change</h2>
+            {/* <h2 className='mobile-version'>Market stats</h2> */}       
+            </div>
+          </div>           
+        </div>
+        <div>
+          {props.data.map ((data) => {
+            return (
+            <Coinslist data = {data}/>
+            )
+          })}
+        </div>
     </div>
     </section>
   )
