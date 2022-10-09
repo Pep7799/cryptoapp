@@ -1,3 +1,36 @@
 p {
     color: black;
 }
+
+
+.coin-image {
+    height: 20px;
+    width: auto;
+    margin-right: 8px;
+}
+
+.coin-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.7rem 1rem;
+    margin: 2rem 0rem -2rem 5rem;
+
+}
+
+.coin-description {
+    display: flex;
+    align-items: center;
+}
+
+.red {
+    color: red;
+}
+
+.green {
+    color: rgb(35, 252, 35);
+}
+
+
+
+

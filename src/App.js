@@ -3,7 +3,7 @@ import axios from 'axios'
 import Sidenav from './components/Sidenav/Sidenav'
 
 function App() {
-  
+
   const [data, setData] = useState(null)
 
   useEffect (() => {
@@ -19,7 +19,9 @@ function App() {
   }, [])
  
      if(!data) return null 
-      
+
+    
+
   return (
     <div className="App">
       <Sidenav data = {data}/>

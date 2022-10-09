@@ -6,7 +6,7 @@
 
 .sidenav{
     width: 15vw;
-    height: 100vh;
+    height: 200vh;
     background: #2F4858;
     color: #FFFFFF;
     padding: 10px 30px;
@@ -31,7 +31,7 @@ span {
 }
 
 .each-list {
-    padding-bottom: 30px;
+    padding-bottom: 50px;
     font-size: 16px;
     font-weight: 400px;
     line-height: 24px;
@@ -54,7 +54,7 @@ span {
     padding: 10px 5px 0px 10px;
     height: 40px;
     width: 100px;
-    margin-bottom: 25px;
+    margin-bottom: 50px;
 }
 
 .main-area {
@@ -62,3 +62,34 @@ span {
     width: 80vh;
     padding: 30px;
 } 
+
+.cointainer {
+    width: 120vh;
+    margin: auto;
+}
+
+.heading-row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid rgb(241, 231, 231);
+    margin: 2rem 1rem;
+    padding: 0.7rem 1rem; 
+}
+
+h2 {
+    font-weight: 500;
+    font-size: 16px;
+    margin-bottom: 15px; 
+    
+}
+
+.coins {
+    margin-left: 0.4rem;
+}
+
+.search-icon {
+    position: absolute;
+    margin: 10px 10px 0px 4px;
+}
+

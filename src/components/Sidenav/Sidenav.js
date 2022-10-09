@@ -1,16 +1,29 @@
-import React, { useEffect, useState } from 'react'
-import axios from 'axios'
+import React from 'react'
 import './Sidenav.css'
 import Home from '../../Images/Home.png'
 import Swap from '../../Images/Swap.png'
 import Vector from '../../Images/Vector.png'
 import Coinslist from '../CoinsList/Coinslist'
+import {BiSearch} from 'react-icons/bi'
 
 
 
 
 
-const Sidenav = (props) => {
+const Sidenav = ({data}) => {
+
+    const [search, setSearch] = React.useState('')  
+
+
+  const handleSearch = (e) => {
+      setSearch(e.target.value)
+  } 
+  
+  const filteredCoins = data.filter ((data) =>
+    data.name.toLowerCase().includes(search.toLowerCase())
+  )
+ 
+    
 
   return (
     <section className='main-board'>
@@ -26,7 +39,11 @@ const Sidenav = (props) => {
     </div>
 
     <div className='main-area'>
-      <input type="text" placeholder = "Search anything" />
+      <BiSearch className = 'search-icon'/>
+      <input type="text" placeholder = "Search anything" onChange={handleSearch}/>
+      
+      
+
       <p>Market trends</p>
 
       <div>
@@ -41,21 +58,27 @@ const Sidenav = (props) => {
           <div>
             <div className='heading-row'>
               <h2>No</h2>
-              <h2>Coin</h2>
+              <h2 className='coins'>Coins</h2>
               <h2>Last price</h2>
               <h2 className='mobile-version'>Change</h2>
-            {/* <h2 className='mobile-version'>Market stats</h2> */}       
+              <h2 className='mobile-version'>Market stats</h2>      
             </div>
           </div>           
         </div>
         <div>
-          {props.data.map ((data) => {
+          {filteredCoins.map ((data) => {
             return (
-            <Coinslist data = {data}/>
+            <Coinslist data = {data} key = {data.id} />
+            
             )
+            
           })}
+          
+          
         </div>
+        
     </div>
+    
     </section>
   )
 }
