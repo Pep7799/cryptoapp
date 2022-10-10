@@ -49,7 +49,7 @@ span {
 }
 
 .dashboard-background {
-    background-color: #00C6AF;
+    
     border-radius: 16px;
     padding: 10px 5px 0px 10px;
     height: 40px;
@@ -58,9 +58,9 @@ span {
 }
 
 .main-area {
-    background-color: #FBFDFF;
-    width: 80vh;
+    width: 40vw;
     padding: 30px;
+    background-color: #FBFDFF;
 } 
 
 .cointainer {

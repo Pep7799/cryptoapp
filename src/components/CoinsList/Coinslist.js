@@ -2,6 +2,8 @@ import React from 'react'
 import './Coinslist.css'
 
 const Coinslist = (props) => {
+
+
   return (
     <div className='coin-row'>
         <p className='coin-number'>{props.data.market_cap_rank}</p>
@@ -17,7 +19,8 @@ const Coinslist = (props) => {
              <p className='change red'>{props.data.price_change_percentage_24h.toFixed(2)}%</p>   
         ) : (
             <p className='change green'>{props.data.price_change_percentage_24h.toFixed(2)}%</p>
-        )} 
+        )}
+
        
 
             
