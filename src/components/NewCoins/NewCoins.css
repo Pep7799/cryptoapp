@@ -1,0 +1,36 @@
+.coin-rowtwo {
+  display: flex;
+  flex-direction: row;
+
+  gap: 7px;
+  background: #ffffff;
+  box-shadow: 0px 0px 25px rgba(48, 73, 191, 0.07);
+  border-radius: 16px;
+  padding: 2px 10px;
+}
+
+.coin-imagetwo {
+  height: 20px;
+  background-color: #ef8e19;
+  height: 35px;
+  width: 35px;
+  margin-top: 20px;
+  border-radius: 3px;
+}
+
+.coin-symbol {
+  margin-bottom: -20px;
+  font-size: 17px;
+}
+
+.coin-name {
+  font-size: 12px;
+}
+
+.last-pricetwo {
+  margin-bottom: -20px;
+}
+
+.coin-descriptiontwo {
+  margin-right: 35px;
+}
