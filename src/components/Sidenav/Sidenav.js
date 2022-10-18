@@ -6,6 +6,11 @@ import Vector from "../../Images/Vector.png";
 import Coinslist from "../CoinsList/Coinslist";
 import { BiSearch } from "react-icons/bi";
 import NewCoins from "../NewCoins/NewCoins.js";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/scrollbar";
+import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
 
 const Sidenav = ({ dollar, naira }) => {
   const [search, setSearch] = React.useState("");
@@ -71,14 +76,35 @@ const Sidenav = ({ dollar, naira }) => {
             onChange={handleSearch}
           />
         </div>
-
-        <div>
-          <p>Market trends</p>
-          <div className="market-trends">
+        <p>Market trends</p>
+        <div className="market-trends">
+          <Swiper
+            className="swiper-container"
+            modules={[Navigation, Pagination, Scrollbar, A11y]}
+            breakpoints={{
+              // when window width is >= 640px
+              600: {
+                width: 640,
+                slidesPerView: 2,
+              },
+              // when window width is >= 768px
+              768: {
+                width: 768,
+                slidesPerView: 3,
+              },
+            }}
+            spaceBetween={50}
+            onSlideChange={() => console.log("slide change")}
+            onSwiper={(swiper) => console.log(swiper)}
+          >
             {filteredNaira.map((naira) => {
-              return <NewCoins key={naira.id} naira={naira} />;
+              return (
+                <SwiperSlide className="imagesliders">
+                  <NewCoins key={naira.id} naira={naira} />;
+                </SwiperSlide>
+              );
             })}
-          </div>
+          </Swiper>
         </div>
 
         <div className="market-updates">

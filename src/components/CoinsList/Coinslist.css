@@ -59,3 +59,30 @@ p {
 .green {
   color: rgb(35, 252, 35);
 }
+
+@media screen and (max-width: 900px) {
+  .coin-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgb(219, 208, 208);
+    padding: 10px 15px;
+    margin: 20px 0px -16px 20px;
+    width: 60vw;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .coin-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    margin: 20px 0px -16px -20px;
+    border-bottom: 1px solid rgb(226, 226, 226);
+    width: 50vw;
+  }
+  .mobile-two {
+    display: none;
+  }
+}
