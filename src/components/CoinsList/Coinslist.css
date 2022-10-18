@@ -80,9 +80,6 @@ p {
     padding: 10px 15px;
     margin: 20px 0px -16px -20px;
     border-bottom: 1px solid rgb(226, 226, 226);
-    width: 50vw;
-  }
-  .mobile-two {
-    display: none;
+    width: 60vw;
   }
 }
