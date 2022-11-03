@@ -9,7 +9,8 @@ const Coinslist = ({ dollar }) => {
       <div className="coin-description">
         <img src={dollar.image} alt="coins" className="coin-image" />
         <span className="mobile-two">{dollar.name}</span>
-        <span> | </span>
+        <br />
+
         <span>{dollar.symbol.toUpperCase()}</span>
       </div>
       <p className="last-price">${dollar.current_price.toLocaleString()}</p>

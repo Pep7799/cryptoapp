@@ -37,7 +37,7 @@ p {
   margin-right: 8px;
 }
 
-.coin-row {
+/* .coin-row {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -45,15 +45,30 @@ p {
   margin: 20px 0px -16px 20px;
   border-bottom: 1px solid rgb(226, 226, 226);
   width: 70vw;
+} */
+
+.coin-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: left;
+  border-bottom: 1px solid rgb(219, 208, 208);
+  padding: 10px 15px;
+  margin: 20px 0px -16px 20px;
+  width: 70vw;
 }
 
 .coin-description {
-  display: flex;
+  width: 10px;
   align-items: center;
+}
+
+.last-price {
+  margin-left: 60px;
 }
 
 .red {
   color: red;
+  float: left;
 }
 
 .green {
